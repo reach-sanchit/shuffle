@@ -1,0 +1,61 @@
+.program-input,
+.program-output{
+    max-width: 520px;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.program-output{
+    background-color: #e3e3e3;
+    padding: 15px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.shuffle-btn{
+    background-color: #ff7600;
+    border: 0;
+    border-radius: 20px;
+    width: 120px;
+    min-height: 40px;
+    padding: 8px;
+    color: white;
+    margin: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+}
+
+.shuffle-btn:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.shuffle-btn:focus{
+    outline: none;
+}
+
+
+.shuffle-icon{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.status-badge{
+    float: right;
+    color: #ff7600;
+    background-color: #fbfbfb;
+    padding: 5px;
+}
+
+#outputText{
+    font-size: large;
+}
+

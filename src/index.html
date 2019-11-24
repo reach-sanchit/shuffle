@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shuffle</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+    <section class="program-input">
+        <h1>Shuffle</h1>
+        <p>The following input takes a numeric value and outputs a random sequence of numbers from 1...N</p>
+        <input type="number" autofocus id="inputRange" min="1" placeholder="Enter value of N" oninput="document.getElementById('inputRange').value && document.getElementById('inputRange').value > 0 ? document.getElementById('btnShuffle').disabled = false : document.getElementById('btnShuffle').disabled = true">
+        <br/>
+        <button id="btnShuffle" class="shuffle-btn" onclick="generateRandomSequence()" disabled="!document.getElementById('inputRange').value">
+            <img src="images/random.svg" class="shuffle-icon"> Shuffle
+        </button>
+        <br/>
+        <button id="btnReset" onclick="resetForm()">Reset</button>
+    </section>
+    <section class="program-output">
+        <div id="statusText" class="status-badge">Ready</div>
+        <h2 style="clear: both;">Output</h2>
+        <div id="outputText"></div>
+    </section>
+</body>
+
+</html>
